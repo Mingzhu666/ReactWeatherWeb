@@ -1,0 +1,38 @@
+.daily-temperature {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 12%;
+
+  &__day {
+    border: 1px solid pink;
+    font-size: 4rem;
+  }
+
+  &__weather-icon {
+    border: 1px solid green;
+    font-size: 3rem;
+  }
+
+  &__range {
+    border: 1px solid grey;
+    font-size: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+
+    &-low {
+      border: 1px solid red;
+      border-right: 5px solid grey;
+      color: rgb(28, 124, 235);
+    }
+
+    &-high {
+      border: 1px solid green;
+      color: rgb(216, 157, 48);
+    }
+  }
+}
