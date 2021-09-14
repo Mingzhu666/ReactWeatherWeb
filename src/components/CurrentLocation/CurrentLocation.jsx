@@ -3,7 +3,7 @@ import './CurrentLocation.scss';
 
 const CurrentLocation = ({ currentLocation }) => {
   return (
-    <div className="search-bar-date">{currentLocation}</div>
+    <div className="location">{currentLocation}</div>
   );
 }
 

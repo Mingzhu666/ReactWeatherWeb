@@ -4,11 +4,25 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-image: url("../../assets/background.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
 
   &__today {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    padding: 3rem;
+    width: 50%;
   }
+}
+
+.search-bar {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
 }

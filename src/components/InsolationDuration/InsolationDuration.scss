@@ -1,17 +1,17 @@
 .insolation-duration {
-  border: 1px solid grey;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   text-align: center;
+  width: 150px;
 
   &__icon {
-    border: 1px solid red;
-    font-size: 3rem;
+    font-size: 4rem;
+    margin-top: 1rem;
   }
 
   &__time {
-    border: 1px solid green;
     font-size: 2rem;
+    margin-top: 1rem;
   }
 }

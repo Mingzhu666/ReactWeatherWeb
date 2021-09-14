@@ -1,15 +1,15 @@
 .temperature-range {
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 150px;
 
   &__type {
     font-size: 3rem;
   }
 
   &__temperature {
-    font-size: 5rem;
+    font-size: 3rem;
   }
 }
