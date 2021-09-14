@@ -6,12 +6,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // WeatherType === WeatherTypeImage ? WeatherIcon : WeatherTypeImage
 // ))
 
-const WeatherTypeIcon = ({ WeatherTypeImage }) => {
-  const weatherTable = [
-    { WeatherType: 'Cloud', WeatherIcon: '<FontAwesomeIcon icon={faCloud} />' },
-    { WeatherType: 'Sun', WeatherIcon: '<FontAwesomeIcon icon={faSun} />' },
-  ];
+// const weatherTable = [
+//   { WeatherType: 'Cloud', WeatherIcon: '<FontAwesomeIcon icon={faCloud} />' },
+//   { WeatherType: 'Sun', WeatherIcon: '<FontAwesomeIcon icon={faSun} />' },
+// ];
 
+const WeatherTypeIcon = ({ WeatherTypeImage }) => {
   return (
     <div className="weather-icon"> 
       {
