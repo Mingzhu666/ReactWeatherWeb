@@ -1,13 +1,13 @@
 import React from 'react';
 import './WeatherWithDescription.scss';
-import WeatherTypeIcon from '../WeatherTypeIcon/WeatherTypeIcon';
-import WeatherTypeDescription from '../WeatherTypeDescription/WeatherTypeDescription';
+import { faCloud, faSun } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const WeatherWithDescription = ({ weatherTypeImage, weatherTypeText }) => {
   return (
     <div className="weather-with-description">
-      <WeatherTypeIcon className="weather-with-description__icon" weatherTypeImage={weatherTypeImage} />
-      <WeatherTypeDescription className="weather-with-description__description" weatherTypeText={weatherTypeText} />
+      <div>{weatherTypeImage === 'Sun' ? <FontAwesomeIcon icon={faSun} /> : ''}</div>
+      <div>{weatherTypeText}</div>
     </div>
   );
 }
