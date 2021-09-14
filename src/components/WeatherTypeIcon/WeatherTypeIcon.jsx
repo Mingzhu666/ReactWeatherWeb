@@ -22,4 +22,3 @@ const WeatherTypeIcon = ({ WeatherTypeImage }) => {
 }
 
 export default WeatherTypeIcon;
-

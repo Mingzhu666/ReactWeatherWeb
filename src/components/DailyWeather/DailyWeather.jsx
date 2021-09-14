@@ -21,5 +21,3 @@ const DailyWeather = ({ day, weatherIcon, lowTemperature, highTemperature }) => 
 }
 
 export default DailyWeather;
-
-

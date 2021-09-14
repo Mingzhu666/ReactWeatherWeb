@@ -4,22 +4,15 @@ import WeatherTypeIcon from '../WeatherTypeIcon/WeatherTypeIcon';
 import WeatherTypeDescription from '../WeatherTypeDescription/WeatherTypeDescription';
 
 class WeatherWithDescription extends Component {
-  constructor() {
-    super();
-
-    this.state = {
-      WeatherTypeImage: 'Sun',
-      WeatherTypeText: 'Sun',
-    }
+  constructor(props) {
+    super(props);
   }
 
   render() {
-    const { WeatherTypeImage, WeatherTypeText } = this.state;
-
     return (
       <div className="weather-with-description">
-        <WeatherTypeIcon className="weather-with-description__icon" WeatherTypeImage={WeatherTypeImage} />
-        <WeatherTypeDescription className="weather-with-description__description" WeatherTypeText={WeatherTypeText} />
+        <WeatherTypeIcon className="weather-with-description__icon" weatherTypeImage={this.props.weatherTypeImage} />
+        <WeatherTypeDescription className="weather-with-description__description" weatherTypeText={this.props.weatherTypeText} />
       </div>
     )
   }

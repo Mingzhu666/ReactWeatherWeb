@@ -10,4 +10,3 @@ const WeatherTypeDescription = ({ WeatherTypeText }) => {
 }
 
 export default WeatherTypeDescription;
-

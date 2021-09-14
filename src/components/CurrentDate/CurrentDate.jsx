@@ -8,4 +8,3 @@ const CurrentDate = ({ currentDate }) => {
 }
 
 export default CurrentDate;
-

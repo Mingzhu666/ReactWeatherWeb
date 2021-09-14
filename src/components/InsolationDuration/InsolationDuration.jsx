@@ -18,5 +18,3 @@ const InsolationDuration = ({ insolationIcon, insolationTime }) => {
 }
 
 export default InsolationDuration;
-
-

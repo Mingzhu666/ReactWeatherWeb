@@ -1,8 +1,8 @@
 // import DailyWeather from "./components/DailyWeather";
-import SevenDayWeather from "./components/SevenDayWeather/SevenDayWeather";
-import TemperatureWithInsolation from "./components/TemperatureWithInsolation";
-import WeatherWithDescription from "./components/WeatherWithDescription";
-import SearchBar from "./components/SearchBar";
+import LandingPage from "./components/LandingPage/LandingPage";
+// import TemperatureWithInsolation from "./components/TemperatureWithInsolation";
+// import WeatherWithDescription from "./components/WeatherWithDescription";
+// import SearchBar from "./components/SearchBar";
 // import { library } from '@fortawesome/fontawesome-svg-core';
 // import { fab } from '@fortawesome/free-brands-svg-icons';
 // <FontAwesomeIcon icon="coffee" />
@@ -15,10 +15,7 @@ import SearchBar from "./components/SearchBar";
 function App() {
   return (
     <div>
-      <SearchBar />
-      <WeatherWithDescription />
-      <TemperatureWithInsolation />
-      <SevenDayWeather />
+      <LandingPage />
     </div>
   );
 }
