@@ -22,13 +22,20 @@ import './LocationSearchBar.scss';
 //   }
 // }
 
-const LocationSearchBar = ({ currentLocation }) => {
+const LocationSearchBar = ({ searchField,handleSearchBarChange, handleSubmit }) => {
+  console.log(searchField);
   return (
-    <input 
-      className='search-bar-location'
-      type='search' 
-      placeholder={currentLocation}
-    />
+    <form onSubmit={handleSubmit}>
+      <input 
+        type='search' 
+        className='search-bar-location'
+        placeholder='Search for a city'
+        value={searchField}
+        // placeholder={currentLocation}
+        onChange={(event) => handleSearchBarChange(event)}
+      />
+      <button type="submit">Search</button>
+    </form>
   );
 }
 
