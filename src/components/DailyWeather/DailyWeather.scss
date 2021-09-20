@@ -13,7 +13,7 @@
   }
 
   &__day {
-    font-size: 3.5rem;
+    font-size: 2rem;
     color: whitesmoke;
   }
 
@@ -32,14 +32,16 @@
     padding-top: 1rem;
 
     &-low {
+      font-size: 1.1rem;
       border-right: 5px solid grey;
       color: rgb(28, 124, 235);
-      padding-right: 1rem;
+      padding-right: 1px;
     }
 
     &-high {
+      font-size: 1.1rem;
       color: rgb(216, 157, 48);
-      padding-left: 1rem;
+      padding-left: 1px;
     }
   }
 }

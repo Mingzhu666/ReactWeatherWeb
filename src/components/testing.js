@@ -1,14 +1,8 @@
-const axios = require('axios');
+const test = new Date(1632080877 * 1000).toLocaleString('en-US', 'Australia/Sydney');
+console.log(test);
 
-axios.get(`https://api.openweathermap.org/data/2.5/weather?q=Sydney&appid=112ab103f1c5ad1981c26cdbe12ff49d`)
-  .then(function (response) {
-    // handle success
-    console.log(response);
-  })
-  .catch(function (error) {
-    // handle error
-    console.log(error);
-  })
-  .then(function () {
-    // always executed
-  });
+
+//d.toLocaleString('en-US', { timeZone: 'America/New_York' })
+//1632080877 sun rise
+//1632124177 sun set
+//36000

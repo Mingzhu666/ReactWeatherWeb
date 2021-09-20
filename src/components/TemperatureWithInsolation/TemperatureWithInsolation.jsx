@@ -3,33 +3,44 @@ import TemperatureRange from '../TemperatureRange/TemperatureRange';
 import InsolationDuration from '../InsolationDuration/InsolationDuration';
 import './TemperatureWithInsolation.scss';
 
-
-const TemperatureWithInsolation = (props) => {
+const TemperatureWithInsolation = ({sunrise, sunset, tempMin, tempMax, timezone}) => {
   return (
     <div className="temperature-with-insolation"> 
       <div className="temperature-container">
         {
-          props.temperatureData.map(({ id, rangeType, rangeTemperature }) => (
-            <TemperatureRange 
-              key={id} 
-              rangeType={rangeType} 
-              rangeTemperature={rangeTemperature} 
+          <>
+           <TemperatureRange 
+              key="1"
+              rangeType="Low" 
+              rangeTemperature={tempMin} 
             />
-          ))
+            <TemperatureRange 
+              key="2" 
+              rangeType="High" 
+              rangeTemperature={tempMax} 
+            />
+          </>
         }
       </div>
 
       <div className="insolation-container">
         {
-          props.insolationData.map(({id, insolationIcon, insolationTime}) => 
-          (
+          <>
             <InsolationDuration
               className="insolation-duration-container__range"
-              key={id}
-              insolationIcon={insolationIcon}
-              insolationTime={insolationTime}
+              key="1"
+              insolationIcon="Start"
+              insolationTime={sunrise}
+              timezone = {timezone}
             />
-          ))
+            <InsolationDuration
+              className="insolation-duration-container__range"
+              key="2"
+              insolationIcon="End"
+              insolationTime={sunset}
+              timezone = {timezone}
+            />
+          </>
         }
       </div>
     </div>

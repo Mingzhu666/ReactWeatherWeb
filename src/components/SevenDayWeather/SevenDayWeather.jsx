@@ -6,9 +6,9 @@ const SevenDayWeather = (props) => {
   return (
     <div className="seven-day-weather">
       {
-        props.sevenDayWeather.map(({ id, day, weatherIcon, lowTemperature, highTemperature }) => 
+        props.forecastData.map(({index, dt, weather, temp}) => 
         (
-          <DailyWeather className="seven-day-weather__daily" key={id} day={day} weatherIcon={weatherIcon} lowTemperature={lowTemperature} highTemperature={highTemperature} />
+          <DailyWeather className="seven-day-weather__daily" key={index} day={new Date(dt*1000).toDateString().split(" ")[0]} weatherIcon={weather[0].icon} lowTemperature={temp.min.toFixed(1)} highTemperature={temp.max.toFixed(1)} />
         ))
       } 
     </div>
