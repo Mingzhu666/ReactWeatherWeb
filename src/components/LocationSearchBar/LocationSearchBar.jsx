@@ -1,7 +1,7 @@
 import React from 'react';
 import './LocationSearchBar.scss';
 
-const LocationSearchBar = ({ searchField, handleSearchBarChange, handleSubmit }) => {
+const LocationSearchBar = ({ searchField, handleChange, handleSubmit }) => {
   return (
     <form onSubmit={handleSubmit}>
       <input 
@@ -9,7 +9,7 @@ const LocationSearchBar = ({ searchField, handleSearchBarChange, handleSubmit })
         className='search-bar-location'
         placeholder='Search for a city'
         value={searchField}
-        onChange={handleSearchBarChange}
+        onChange={handleChange}
       />
     </form>
   );
