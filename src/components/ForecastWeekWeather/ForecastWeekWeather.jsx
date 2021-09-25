@@ -1,15 +1,15 @@
 import React from 'react';
 import DailyWeather from '../DailyWeather';
-import './SevenDayWeather.scss';
+import './ForecastWeekWeather.scss';
 
-const SevenDayWeather = (props) => {
+const ForecastWeekWeather = (props) => {
   return (
-    <div className="seven-day-weather">
+    <div className="forecast-week-weather">
       {
         props.forecastData.map((data, index) => 
         (
           <DailyWeather
-            className="seven-day-weather__daily"
+            className="forecast-week-weather__daily"
             key={index}
             day={new Date(data.dt*1000).toDateString().split(" ")[0]}
             weatherIcon={data.weather[0].icon}
@@ -22,4 +22,4 @@ const SevenDayWeather = (props) => {
   );
 }
  
-export default SevenDayWeather;
+export default ForecastWeekWeather;

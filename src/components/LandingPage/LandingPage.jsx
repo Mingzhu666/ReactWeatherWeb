@@ -5,7 +5,7 @@ import './LandingPage.scss';
 import { WEATHER_API_KEY } from "../../config";
 import TemperatureWithInsolation from '../TemperatureWithInsolation';
 import WeatherWithDescription from '../WeatherWithDescription';
-import SevenDayWeather from '../SevenDayWeather';
+import ForecastWeekWeather from '../ForecastWeekWeather';
 import LocationSearchBar from '../LocationSearchBar';
 import CurrentLocation from '../CurrentLocation';
 
@@ -104,7 +104,7 @@ class LandingPage extends Component {
               timezone={forecastData.timezone}
             />
           </div>
-          <SevenDayWeather forecastData={forecastData.daily} />
+          <ForecastWeekWeather forecastData={forecastData.daily} />
         </div>
       )
     )
