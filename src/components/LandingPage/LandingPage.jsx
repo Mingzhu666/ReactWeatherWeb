@@ -78,6 +78,8 @@ class LandingPage extends Component {
 
   render() {
     const { location, searchField, todaysData, forecastData } = this.state;
+    // const { sunrise, sunset, temp } = this.state?.todaysData;
+    // console.log(this.state?.todaysData);
 
     return (
       this.state.isLoading ? (
